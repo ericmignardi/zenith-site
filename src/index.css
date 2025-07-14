@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-text: #1e293b; /* Dark Slate – strong, readable text */
+  --color-background: #f8fafc; /* Light Grayish Blue – clean and airy background */
+  --color-primary: #22c55e; /* Green – represents health, energy, growth */
+  --color-secondary: #0ea5e9; /* Bright Blue – trust, freshness, motivation */
+  --color-accent: #f97316; /* Orange – action, movement, intensity */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  /* font-family: "JetBrains Mono", monospace; */
+}
+
+/* Headlines:        Inter, text-5xl, font-bold */
+/* Subheadings:      Inter, text-2xl, font-semibold */
+/* Body text:        Inter, text-base, font-normal */
+/* Emphasized text:  Inter, text-base, font-medium */
+/* Captions:         Inter, text-sm, font-light */
+/* Buttons/CTAs:     Inter, text-sm, font-semibold */
+/* Code text:        JetBrains Mono, text-sm, font-medium */
+/* Input labels:     Inter, text-sm, font-medium */
+/* Navigation:       Inter, text-base, font-semibold */
