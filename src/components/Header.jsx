@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="absolute top-0 left-0 w-full mt-4 mx-4 z-30">
+      <header className="absolute top-0 left-0 right-0 mt-4 mx-4 z-30">
         <div className="container mx-auto flex justify-between items-center p-4 border border-black border-solid rounded-full bg-background">
           <a href="/">
             <img className="w-36" src={logo} alt="Zenith brand logo" />
