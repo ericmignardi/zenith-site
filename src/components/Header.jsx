@@ -22,6 +22,7 @@ const Header = () => {
           <a href="/">
             <img className="w-36" src={logo} alt="Zenith brand logo" />
           </a>
+
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex justify-center items-center gap-2 z-30">
             {navItems.map((item, index) => (
