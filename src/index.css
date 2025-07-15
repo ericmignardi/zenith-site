@@ -2,22 +2,39 @@
 @import "tailwindcss";
 
 @theme {
-  --color-text: #1e293b; /* Dark Slate – strong, readable text */
-  --color-background: #f8fafc; /* Light Grayish Blue – clean and airy background */
-  --color-primary: #22c55e; /* Green – represents health, energy, growth */
-  --color-secondary: #0ea5e9; /* Bright Blue – trust, freshness, motivation */
-  --color-accent: #f97316; /* Orange – action, movement, intensity */
+  --color-background: #ffffff; /* Pure white background */
+  --color-text: #0f0f0f; /* Near black for clean readability */
+  --color-primary: #1a1a1a; /* Jet black for headings or key elements */
+  --color-secondary: #444444; /* Dark gray for subtext or UI elements */
+  --color-accent: #000000; /* Black accent for buttons, borders, etc. */
+  --color-muted: #e5e5e5; /* Light gray for dividers, cards, etc. */
+  /* --breakpoint-xs: 30rem;  */
 }
+
+/* @layer base {
+  h1 {
+    @apply ; Doesn't require class name
+  }
+} */
+
+/* @layer components {
+  .button {
+    @apply ;
+  }
+} */
+
+/* @utility hero-container {
+    @apply ;
+} */
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: var(--color-text);
   background-color: var(--color-background);
-  /* font-family: "JetBrains Mono", monospace; */
 }
 
 /* Headlines:        Inter, text-5xl, font-bold */

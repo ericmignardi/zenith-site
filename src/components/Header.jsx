@@ -17,10 +17,10 @@ const Header = () => {
 
   return (
     <>
-      <header className="absolute top-0 left-0 right-0 mt-4 mx-4 z-30">
-        <div className="container mx-auto flex justify-between items-center p-4 border border-black border-solid rounded-full bg-background">
+      <header className="absolute top-0 left-0 right-0 mx-2 z-30 p-4">
+        <div className="h-15 flex justify-between items-center px-2 py-2 rounded-full bg-background/90">
           <a href="/">
-            <img className="w-36" src={logo} alt="Zenith brand logo" />
+            <img className="w-34" src={logo} alt="Zenith brand logo" />
           </a>
 
           {/* Desktop Navigation */}
@@ -28,9 +28,9 @@ const Header = () => {
             {navItems.map((item, index) => (
               <a
                 key={index}
-                className={`text-base font-semibold rounded-full px-4 py-2 ${
+                className={`text-sm font-medium rounded-full px-4 py-2 ${
                   activeTab === item.id.substring(1)
-                    ? "bg-gray-200 flex items-center gap-1"
+                    ? "bg-gray-300/90 flex items-center gap-1"
                     : ""
                 }`}
                 href={item.id}
@@ -41,7 +41,7 @@ const Header = () => {
             ))}
           </nav>
 
-          <button className="hidden lg:block text-sm font-semibold rounded-full bg-primary text-background px-4 py-2 cursor-pointer hover:opacity-90 transition-opacity z-30">
+          <button className="hidden lg:block text-sm font-medium rounded-full bg-primary text-background px-4 py-2 cursor-pointer hover:opacity-90 transition-opacity z-30">
             Join Now
           </button>
           <FiMenu
@@ -64,12 +64,12 @@ const Header = () => {
           <a href="/">
             <img className="w-50" src={logo} alt="Zenith brand logo" />
           </a>
-          <hr className="text-4xl text-text outline-1 h-[50%]" />
+          <hr className="text-4xl text-background outline-1 h-[50%]" />
           <nav className="flex flex-col justify-center items-start h-full gap-2">
             {navItems.map((item, index) => (
               <a
                 key={index}
-                className={`text-base font-semibold hover:opacity-90 transition-opacity flex items-center gap-1 ${
+                className={`text-base font-medium text-background hover:opacity-90 transition-opacity flex items-center gap-1 ${
                   activeTab === item.id.substring(1) ? "text-background" : ""
                 }`}
                 href={item.id}
@@ -80,11 +80,11 @@ const Header = () => {
               >
                 {item.label}
                 {activeTab === item.id.substring(1) && (
-                  <FiArrowLeft className="text-secondary" aria-hidden="true" />
+                  <FiArrowLeft className="text-text" aria-hidden="true" />
                 )}
               </a>
             ))}
-            <button className="text-base font-bold cursor-pointer text-secondary hover:text-accent transition-colors z-30">
+            <button className="text-base font-medium cursor-pointer text-text hover:opacity-90 transition-opacity z-30">
               Join Now
             </button>
             <FiX

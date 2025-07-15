@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 
 const App = () => {
   return (
-    <div>
+    <div className="max-w-[1440px] mx-auto relative">
       <Header />
       <Hero />
     </div>
