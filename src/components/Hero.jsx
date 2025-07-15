@@ -6,7 +6,7 @@ const Hero = () => {
       style={{
         backgroundImage: `url(${hero})`,
       }}
-      className="relative min-h-[600px] bg-center bg-cover bg-no-repeat m-2 rounded-xl text-background/80 flex items-end pb-8 lg:pb-16"
+      className="relative min-h-screen bg-center bg-cover bg-no-repeat m-2 rounded-xl text-background/80 flex items-end pb-8 lg:pb-16"
     >
       {/* Dark Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/30 rounded-xl z-10"></div>
