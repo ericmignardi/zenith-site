@@ -17,14 +17,16 @@
   }
 } */
 
-/* @layer components {
-  .button {
+@layer components {
+  .app-container {
+    @apply max-w-[1440px] mx-auto relative;
+  }
+}
+
+/* @layer utilities {
+  .class-name {
     @apply ;
   }
-} */
-
-/* @utility hero-container {
-    @apply ;
 } */
 
 html {
