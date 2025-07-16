@@ -41,9 +41,7 @@ const Header = () => {
             ))}
           </nav>
 
-          <button className="hidden lg:block text-sm font-medium rounded-full bg-primary text-background px-4 py-2 cursor-pointer hover:opacity-90 transition-opacity z-30">
-            Join Now
-          </button>
+          <button className="hidden lg:block button z-30">Join Now</button>
           <FiMenu
             aria-label="Toggle mobile menu"
             aria-expanded={mobileToggle}

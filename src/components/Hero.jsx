@@ -10,12 +10,12 @@ const Hero = () => {
     >
       {/* Dark Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/30 rounded-xl z-10"></div>
-      <div className="relative h-full w-full z-20 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 justify-between items-end px-6">
-        <div className="flex flex-col justify-end gap-2 h-full">
-          <p className="text-xs lg:text-sm font-light uppercase text-background/60">
-            Hi, We're Zenith
+      <div className="relative h-full w-full z-20 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8 justify-between items-end px-6 lg:px-20">
+        <div className="flex flex-col justify-end gap-4 h-full">
+          <p className="subtitle-light">
+            <span className="text-background/80">&bull;</span> Hi, We're Zenith
           </p>
-          <h1 className="text-4xl lg:text-5xl font-normal">
+          <h1 className="title-light">
             Your trusted partners <br /> in{" "}
             <span className="italic">Fitness</span>
           </h1>
