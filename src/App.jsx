@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="app-container">
+    <div className="app-container m-2">
       <Header />
       <Hero />
       <Services />
@@ -17,7 +17,7 @@ const App = () => {
       <Trainers />
       <Testimonials />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

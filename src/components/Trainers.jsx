@@ -6,7 +6,7 @@ import trainers3 from "../assets/trainers4.jpg";
 
 const Trainers = () => {
   return (
-    <div className="m-2 rounded-xl bg-gray-200/80 flex items-end px-6 lg:px-20">
+    <div className="rounded-xl bg-gray-200/80 flex items-end px-6 lg:px-20">
       <div className="flex flex-col lg:flex-row p-2 lg:p-20 gap-4">
         {/* Description */}
         <div className="flex flex-col flex-1 gap-4 px-10 py-10 lg:px-0 lg:py-0 text-center lg:text-left">
