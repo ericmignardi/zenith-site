@@ -34,7 +34,7 @@ const Testimonials = () => {
             "I’ve tried many similar solutions before, but none came close to this one. It’s user-friendly, efficient, and has made my daily tasks so much easier. Five stars!"
           }
           image={testimonials1}
-          name={"David Chen"}
+          name={"Samantha Lee"}
           location={"Ottawa, ON"}
           bg={"bg-gray-200"}
         />
@@ -43,7 +43,7 @@ const Testimonials = () => {
             "From start to finish, the experience was smooth and enjoyable. Customer support was fantastic and always ready to help. I’m very impressed and will definitely be back."
           }
           image={testimonials2}
-          name={"Samantha Lee"}
+          name={"David Chen"}
           location={"Hamilton, ON"}
           bg={"bg-primary"}
           text={"text-background"}

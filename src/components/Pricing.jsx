@@ -10,7 +10,8 @@ const Pricing = () => {
           <span className="text-text/80">&bull;</span> Pricing
         </p>
         <h2 className="title-dark">
-          Invest in your health with plans that fit your budget
+          Invest in your health with plans that fit your{" "}
+          <span className="italic">budget</span>
         </h2>
         <button className="button">Choose your plan</button>
       </div>
