@@ -9,14 +9,18 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="app-container m-2">
+    <div className="app-container">
       <Header />
-      <Hero />
-      <Services />
-      <Pricing />
-      <Trainers />
-      <Testimonials />
-      <Contact />
+      <main>
+        <Hero />
+        <div className="max-w-screen-xl mx-auto">
+          <Services />
+          <Pricing />
+          <Trainers />
+          <Testimonials />
+          <Contact />
+        </div>
+      </main>
       <Footer />
     </div>
   );

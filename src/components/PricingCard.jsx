@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 const PricingCard = ({ icon, plan, description }) => {
   const features = {
     Basic: [
@@ -27,7 +29,13 @@ const PricingCard = ({ icon, plan, description }) => {
   };
 
   return (
-    <div className="flex flex-col h-120 gap-4 p-6 bg-background rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center border border-gray-200">
+    <motion.div
+      initial={{ y: 10 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, ease: "easeIn" }}
+      viewport={{ once: true }}
+      className="flex flex-col h-120 gap-4 p-6 bg-background rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center border border-gray-200"
+    >
       {/* Title */}
       <div className="flex flex-col items-center gap-3">
         <div className="bg-primary rounded-full p-4 text-background">
@@ -50,7 +58,7 @@ const PricingCard = ({ icon, plan, description }) => {
         </ul>
       </div>
       <button className="button self-center w-auto">Choose {plan}</button>
-    </div>
+    </motion.div>
   );
 };
 

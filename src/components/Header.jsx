@@ -17,20 +17,19 @@ const Header = () => {
 
   return (
     <>
-      <header className="absolute top-0 left-0 right-0 mx-2 z-30 p-4">
-        <div className="h-14 flex justify-between items-center px-2 py-2 rounded-full bg-background/90">
+      <header className="fixed top-0 left-0 right-0 mt-4 z-30 p-4">
+        <div className="max-w-screen-xl mx-auto flex justify-between items-center px-4 py-2 rounded-xl lg:rounded-full bg-background">
           <a href="/">
             <img className="w-34" src={logo} alt="Zenith brand logo" />
           </a>
-
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex justify-center items-center gap-2 z-30">
             {navItems.map((item, index) => (
               <a
                 key={index}
-                className={`text-sm font-medium rounded-full px-4 py-2 ${
+                className={`text-lg font-normal rounded-full px-6 py-2 hover:scale-90 transition-all ${
                   activeTab === item.id.substring(1)
-                    ? "bg-gray-300/90 flex items-center gap-1"
+                    ? "bg-gray-300 flex items-center gap-1"
                     : ""
                 }`}
                 href={item.id}
@@ -40,24 +39,31 @@ const Header = () => {
               </a>
             ))}
           </nav>
-
           <button className="hidden lg:block button z-30">Join Now</button>
-          <FiMenu
-            aria-label="Toggle mobile menu"
-            aria-expanded={mobileToggle}
-            onClick={() => setMobileToggle(!mobileToggle)}
-            className="lg:hidden text-4xl font-semibold rounded-full bg-primary text-background p-2 cursor-pointer hover:opacity-90 transition-opacity z-60"
-          />
+          {!mobileToggle ? (
+            <FiMenu
+              aria-label="Toggle mobile menu"
+              aria-expanded={mobileToggle}
+              onClick={() => setMobileToggle(!mobileToggle)}
+              className="lg:hidden text-4xl font-semibold rounded-xl lg:rounded-full bg-primary text-background p-2 cursor-pointer hover:opacity-90 transition-opacity z-60"
+            />
+          ) : (
+            <FiX
+              aria-label="Toggle mobile menu"
+              aria-expanded={mobileToggle}
+              onClick={() => setMobileToggle(!mobileToggle)}
+              className="lg:hidden text-4xl font-semibold rounded-xl lg:rounded-full bg-primary text-background p-2 cursor-pointer hover:opacity-90 transition-opacity z-60"
+            />
+          )}
         </div>
       </header>
-
       {/* Mobile Navigation */}
-      {mobileToggle && (
+      {/* {mobileToggle && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ type: "spring" }}
-          className="fixed top-0 right-0 w-full h-full bg-primary/80 backdrop-blur-sm z-50 flex justify-center items-center gap-4"
+          className="absolute top-0 right-0 size-20 bg-primary/80 backdrop-blur-sm z-50 flex justify-center items-center gap-4"
         >
           <a href="/">
             <img className="w-50" src={logo} alt="Zenith brand logo" />
@@ -91,7 +97,7 @@ const Header = () => {
             />
           </nav>
         </motion.div>
-      )}
+      )} */}
     </>
   );
 };

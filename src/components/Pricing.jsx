@@ -1,19 +1,41 @@
 import { FiUser, FiStar, FiAward } from "react-icons/fi";
 import PricingCard from "./PricingCard";
-import services2 from "../assets/services2.jpg";
+import { motion } from "motion/react";
 
 const Pricing = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-8 p-2 lg:p-20">
-      <div className="flex flex-col justify-center items-center gap-4 text-center w-[80%] px-10 py-10">
+    <div className="flex flex-col justify-center items-center gap-8 section-padding">
+      <div className="flex flex-col justify-center items-center gap-4 text-center w-[80%] py-10">
         <p className="subtitle-dark">
-          <span className="text-text/80">&bull;</span> Pricing
+          <motion.span
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "easeIn" }}
+            viewport={{ once: true }}
+            className="text-text/80"
+          >
+            &bull; Pricing
+          </motion.span>
         </p>
-        <h2 className="title-dark">
+        <motion.h2
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
+          viewport={{ once: true }}
+          className="title-dark"
+        >
           Invest in your health with plans that fit your{" "}
           <span className="italic">budget</span>
-        </h2>
-        <button className="button">Choose your plan</button>
+        </motion.h2>
+        <motion.button
+          initial={{ y: 10 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
+          viewport={{ once: true }}
+          className="button"
+        >
+          Choose your plan
+        </motion.button>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-4">
         <PricingCard

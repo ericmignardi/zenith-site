@@ -2,22 +2,43 @@ import TestimonialsCard from "./TestimonialsCard";
 import testimonials from "../assets/testimonials.jpg";
 import testimonials1 from "../assets/testimonials1.jpg";
 import testimonials2 from "../assets/testimonials2.jpg";
+import { motion } from "motion/react";
 
 const Testimonials = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-8 p-2 lg:p-20">
+    <div className="flex flex-col justify-center items-center gap-8 section-padding">
       {/* Header */}
-      <div className="flex flex-col justify-center items-center gap-4 text-center w-[80%] px-10 py-10">
+      <div className="flex flex-col justify-center items-center gap-4 text-center py-10">
         <p className="subtitle-dark">
-          <span className="text-text/80">&bull;</span> Testimonials
+          <motion.span
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "easeIn" }}
+            viewport={{ once: true }}
+            className="text-text/80"
+          >
+            &bull; Testimonials
+          </motion.span>
         </p>
-        <h2 className="title-dark">
+        <motion.h2
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
+          viewport={{ once: true }}
+          className="title-dark"
+        >
           What our clients <span className="italic">say</span>
-        </h2>
-        <p className="text-xs lg:text-sm font-light text-text/60">
+        </motion.h2>
+        <motion.p
+          initial={{ y: 10 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
+          viewport={{ once: true }}
+          className="text-xs lg:text-sm font-light text-text/60"
+        >
           Our goal is to provide clients with an exceptional fitness experience,
           offering top-tier service every step of the way.
-        </p>
+        </motion.p>
       </div>
       {/* Testimonials */}
       <div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center gap-4">

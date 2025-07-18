@@ -1,19 +1,42 @@
 import services from "../assets/services.jpg";
 import services1 from "../assets/services1.jpg";
 import ServicesCard from "./ServicesCard";
+import { motion } from "motion/react";
 
 const Services = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-8 p-2 lg:p-20">
-      <div className="flex flex-col justify-center items-center gap-4 text-center w-[80%] px-10 py-10">
+    <div className="flex flex-col justify-center items-center gap-8 section-padding">
+      <div className="flex flex-col justify-center items-center gap-4 text-center py-10">
         <p className="subtitle-dark">
-          <span className="text-text/80">&bull;</span> Services
+          <motion.span
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, ease: "easeIn" }}
+            viewport={{ once: true }}
+            className="text-text/80"
+          >
+            &bull; Services
+          </motion.span>{" "}
         </p>
-        <h2 className="title-dark">
+        <motion.h2
+          initial={{ y: 100 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
+          viewport={{ once: true }}
+          className="title-dark"
+        >
           Reaching your fitness goals doesn't have to be{" "}
           <span className="italic">overwhelming</span>
-        </h2>
-        <button className="button">See all services</button>
+        </motion.h2>
+        <motion.button
+          initial={{ y: 10 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 0.5, ease: "easeIn" }}
+          viewport={{ once: true }}
+          className="button"
+        >
+          See all services
+        </motion.button>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 justify-center items-center w-full">
         <ServicesCard

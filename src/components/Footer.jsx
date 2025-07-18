@@ -2,9 +2,9 @@ import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-primary rounded-xl text-background overflow-hidden p-2 lg:p-20">
+    <footer className="section-padding relative bg-primary text-background overflow-hidden">
       {/* Grid Content */}
-      <div className="grid grid-cols-1 lg:grid-cols-5 justify-center gap-8 px-6 lg:px-20 pt-4 lg:pt-0 pb-20 lg:pb-32 z-10 relative">
+      <div className="grid grid-cols-1 lg:grid-cols-5 justify-center gap-8 z-10 relative max-w-screen-xl mx-auto">
         {/* Column 1 */}
         <div className="flex flex-col gap-4 items-center text-center lg:items-start lg:text-left">
           <p className="text-xs lg:text-sm">
@@ -148,7 +148,7 @@ const Footer = () => {
         </div>
       </div>
       {/* Zenith Brand Background Text */}
-      <p className="absolute bottom-[-40px] lg:bottom-[-60px] left-0 w-full text-center text-[10rem] lg:text-[16rem] font-normal text-background/80 pointer-events-none select-none z-0 leading-none">
+      <p className="absolute bottom-[-40px] lg:bottom-[-60px] left-0 w-full text-center text-[10rem] lg:text-[20em] font-normal text-background/80 pointer-events-none select-none z-0 leading-none">
         Zenith
       </p>
     </footer>

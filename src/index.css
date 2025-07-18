@@ -2,30 +2,29 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #ffffff; /* Pure white background */
-  --color-text: #0f0f0f; /* Near black for clean readability */
-  --color-primary: #1a1a1a; /* Jet black for headings or key elements */
-  --color-secondary: #444444; /* Dark gray for subtext or UI elements */
-  --color-accent: #000000; /* Black accent for buttons, borders, etc. */
-  --color-muted: #e5e5e5; /* Light gray for dividers, cards, etc. */
-  /* --breakpoint-xs: 30rem;  */
+  --color-background: #ffffff;
+  --color-text: #0f0f0f;
+  --color-primary: #1a1a1a;
+  --color-secondary: #444444;
+  --color-accent: #000000;
+  --color-muted: #e5e5e5;
 }
-
-/* @layer base {
-  h1 {
-    @apply ; Doesn't require class name
-  }
-} */
 
 @layer components {
   .app-container {
-    @apply max-w-[100vw] mx-auto relative;
+    @apply min-h-screen flex flex-col justify-between gap-8;
+  }
+  .button {
+    @apply text-lg font-normal rounded-full bg-primary text-background px-6 py-2 cursor-pointer border border-transparent border-solid hover:text-text hover:bg-background hover:border hover:border-text hover:border-solid transition-all;
+  }
+  .button-light {
+    @apply text-lg font-normal rounded-full bg-background text-primary px-6 py-2 cursor-pointer border border-transparent border-solid hover:text-background hover:bg-text hover:border hover:border-background hover:border-solid transition-all;
   }
   .subtitle-light {
-    @apply text-xs lg:text-sm font-light uppercase text-background/60;
+    @apply text-xs lg:text-sm font-bold uppercase text-background/60;
   }
   .subtitle-dark {
-    @apply text-xs lg:text-sm font-light uppercase text-text/60;
+    @apply text-xs lg:text-sm font-bold uppercase text-text/60;
   }
   .title-light {
     @apply text-4xl lg:text-5xl font-normal;
@@ -33,19 +32,17 @@
   .title-dark {
     @apply text-4xl lg:text-5xl font-normal text-text;
   }
-  .button {
-    @apply text-sm font-medium rounded-full bg-primary text-background px-4 py-2 cursor-pointer hover:opacity-90 transition-opacity;
-  }
+
   .services-card {
     @apply flex flex-col justify-center gap-2 p-4 rounded-xl;
   }
 }
 
-/* @layer utilities {
-  .class-name {
-    @apply ;
+@layer utilities {
+  .section-padding {
+    @apply py-12 px-4;
   }
-} */
+}
 
 html {
   scroll-behavior: smooth;
@@ -57,7 +54,8 @@ body {
   background-color: var(--color-background);
 }
 
-/* initial
+/*
+initial
 animate
 end (before unmounting, required AnimatePresence)
 transition (duration, ease, type)
@@ -69,14 +67,5 @@ useAnimationControls (action to fire another action)
 variant
 useScroll
 useSpring (uses useScroll)
-useTransform (uses useScroll + array of values) */
-
-/* Headlines:        Inter, text-5xl, font-bold */
-/* Subheadings:      Inter, text-2xl, font-semibold */
-/* Body text:        Inter, text-base, font-normal */
-/* Emphasized text:  Inter, text-base, font-medium */
-/* Captions:         Inter, text-sm, font-light */
-/* Buttons/CTAs:     Inter, text-sm, font-semibold */
-/* Code text:        JetBrains Mono, text-sm, font-medium */
-/* Input labels:     Inter, text-sm, font-medium */
-/* Navigation:       Inter, text-base, font-semibold */
+useTransform (uses useScroll + array of values)
+*/
