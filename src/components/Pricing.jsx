@@ -4,7 +4,10 @@ import { motion } from "motion/react";
 
 const Pricing = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-8 section-padding">
+    <div
+      className="flex flex-col justify-center items-center gap-8 section-padding"
+      id="pricing"
+    >
       <div className="flex flex-col justify-center items-center gap-4 text-center w-[80%] py-10">
         <p className="subtitle-dark">
           <motion.span

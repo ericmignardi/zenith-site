@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 
 const Trainers = () => {
   return (
-    <div className="rounded-xl flex items-end section-padding">
+    <div className="rounded-xl flex items-end section-padding" id="trainers">
       <div className="flex flex-col lg:flex-row gap-4">
         {/* Description */}
         <div className="flex flex-col flex-1 gap-4 py-10 lg:py-0 text-center lg:text-left">

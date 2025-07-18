@@ -5,7 +5,10 @@ import { motion } from "motion/react";
 
 const Services = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-8 section-padding">
+    <div
+      className="flex flex-col justify-center items-center gap-8 section-padding"
+      id="services"
+    >
       <div className="flex flex-col justify-center items-center gap-4 text-center py-10">
         <p className="subtitle-dark">
           <motion.span

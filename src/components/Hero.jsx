@@ -3,7 +3,10 @@ import { motion } from "motion/react";
 
 const Hero = () => {
   return (
-    <motion.div className="relative h-screen text-background/80 flex items-end section-padding">
+    <motion.div
+      className="relative h-screen text-background flex items-end section-padding"
+      id="home"
+    >
       {/* Image Background */}
       <motion.img
         initial={{ scale: 2 }}

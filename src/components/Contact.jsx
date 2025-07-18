@@ -3,7 +3,10 @@ import { motion } from "motion/react";
 
 const Contact = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-center section-padding">
+    <div
+      className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-center items-center section-padding"
+      id="contact"
+    >
       {/* Description */}
       <div className="h-full flex flex-col justify-between items-start gap-4 py-10 lg:py-0 text-center lg:text-left">
         <div className="flex flex-col justify-center items-center lg:items-start gap-4">

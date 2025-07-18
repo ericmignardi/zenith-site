@@ -32,7 +32,6 @@
   .title-dark {
     @apply text-4xl lg:text-5xl font-normal text-text;
   }
-
   .services-card {
     @apply flex flex-col justify-center gap-2 p-4 rounded-xl;
   }
