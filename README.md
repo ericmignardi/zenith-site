@@ -1,12 +1,30 @@
-# React + Vite
+## 🎯 Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Zenith** is a sleek, modern fitness website built with **React**, styled using **Tailwind CSS**, and animated with **Framer Motion**. It offers a responsive and engaging user experience for gyms, personal trainers, and fitness enthusiasts.
 
-Currently, two official plugins are available:
+## 💡 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 💪 Hero section with smooth scroll-based animations
+- 🧘 Service listing with animated cards and responsive layout
+- 🧑‍🏫 Trainer profiles with hover effects
+- 💬 Testimonials and contact form
+- 🧭 Client-side routing with React Router
+- ⚡ Built with Vite for blazing-fast development
+- 🌐 Fully responsive design using Tailwind CSS and Flex/Grid
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 18** — UI Library
+- **Vite** — Modern frontend tooling
+- **React Router** — Client-side routing
+- **Tailwind CSS** — Utility-first CSS framework
+- **Framer Motion** — Animations and transitions
+- **Render.com** — Deployment platform
+
+## 🔗 Links
+
+- Live Site: https://zenith-site.onrender.com/
+
+## 📸 Screenshots
+
+![Home Page](./public/screenshot.png)
