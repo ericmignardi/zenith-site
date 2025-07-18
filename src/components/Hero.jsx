@@ -1,4 +1,4 @@
-import hero from "../assets/hero.jpg";
+import hero1 from "../assets/hero1.jpg";
 import { motion } from "motion/react";
 
 const Hero = () => {
@@ -13,7 +13,7 @@ const Hero = () => {
         animate={{ scale: 1 }}
         transition={{ duration: 1, ease: "easeIn" }}
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src={hero}
+        src={hero1}
         alt="Hero section image"
       />
       {/* Dark Overlay */}
